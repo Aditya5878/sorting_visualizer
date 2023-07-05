@@ -1,0 +1,112 @@
+/* CONTAINER FOR THE ARRAY */
+*{
+  background-color:  	 rgb(80, 192, 227) ;
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+.array-container {
+    position: relative;
+    /* border-style: solid; */
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+   
+  }
+  
+  /* EACH ARRAY IN THE CONTAINER */
+  .array-bar {
+    width: 10px;
+    /* background-color: aqua; */
+    display: inline-block;
+   /* border-style: black; */
+    margin: 0 2px;            
+    /* position: absolute; */
+    /* border-style: solid; */
+  }
+  .Button{
+    position: relative;
+    /* left: 20px; */
+    top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    /* border: solid; */
+    flex-wrap: wrap;
+    
+  }
+  .btn{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 40px;
+    border: solid black;
+    background-color:black;
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+    color:white;
+  }
+  .btn:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px red;
+  }
+  
+  .btn:hover {
+    color: red;
+    box-shadow: 0 0 15px red;
+    text-shadow: 0 0 15px red;
+  }
+  header{
+      /* background-color: red; */
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-family: monospace;
+      color: white;
+      
+      border-style: solid;
+      z-index: 1;
+      background-color: black;
+  }
+    
+  
+
+  .main{
+    
+    font-family:arial black;
+    font-size:50px;
+    background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 75s linear infinite;
+  }
+  @keyframes rainbow-animation {
+    to {
+        background-position: 450vh;
+    }
+}
+
+.Footer{
+       position: relative;
+       top: 200px;
+       font-size: 20px;
+       font-weight: 400;
+       color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    font-size: 30px;
+  }
+}
